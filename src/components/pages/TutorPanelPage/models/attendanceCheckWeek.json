@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "О",
+    "surname": "Петров",
+    "patronymic": "А",
+    "groupNumber": 20,
+    "attendanceSchedule": [
+      {
+        "dayOfWeek": "MONDAY",
+        "workedTime": "1:58"
+      },
+      {
+        "dayOfWeek": "WEDNESDAY",
+        "workedTime": "1:58"
+      }
+    ],
+    "debt": "1:02",
+    "fact": "Отработка",
+    "tutorComment": "Отработка пропуска за 14.06.2024",
+    "headComment": "Стажер отписался о своей проблеме заранее."
+  },
+  {
+    "id": 2,
+    "name": "И",
+    "surname": "Рулько",
+    "patronymic": "К",
+    "groupNumber": 22,
+    "attendanceSchedule": [
+      {
+        "dayOfWeek": "MONDAY",
+        "workedTime": "1:00"
+      },
+      {
+        "dayOfWeek": "WEDNESDAY",
+        "workedTime": "0:57"
+      }
+    ],
+    "debt": "6:13",
+    "fact": null,
+    "tutorComment": null,
+    "headComment": null
+  },
+  {
+    "id": 3,
+    "name": "З",
+    "surname": "Кулькова",
+    "patronymic": "У",
+    "groupNumber": 20,
+    "attendanceSchedule": [
+      {
+        "dayOfWeek": "MONDAY",
+        "workedTime": "1:53"
+      },
+      {
+        "dayOfWeek": "WEDNESDAY",
+        "workedTime": "1:00"
+      }
+    ],
+    "debt": "7:07",
+    "fact": "Другое",
+    "tutorComment": "Семейные обстоятельства",
+    "headComment": "Стажер отписался о своей проблеме заранее."
+  },
+  {
+    "id": 4,
+    "name": "М",
+    "surname": "Коровин",
+    "patronymic": "В",
+    "groupNumber": 22,
+    "attendanceSchedule": [
+      {
+        "dayOfWeek": "MONDAY",
+        "workedTime": "1:53"
+      },
+      {
+        "dayOfWeek": "WEDNESDAY",
+        "workedTime": "1:00"
+      }
+    ],
+    "debt": "7:43",
+    "fact": null,
+    "tutorComment": null,
+    "headComment": null
+  },
+  {
+    "id": 5,
+    "name": "И",
+    "surname": "Петровский",
+    "patronymic": "К",
+    "groupNumber": 20,
+    "attendanceSchedule": [
+      {
+        "dayOfWeek": "MONDAY",
+        "workedTime": "1:58"
+      },
+      {
+        "dayOfWeek": "WEDNESDAY",
+        "workedTime": "1:58"
+      }
+    ],
+    "debt": "11:34",
+    "fact": "Другое",
+    "tutorComment": "Семейные обстоятельства",
+    "headComment": "Стажер отписался о своей проблеме заранее."
+  },
+  {
+    "id": 6,
+    "name": "Э",
+    "surname": "Кругликовских",
+    "patronymic": "Р",
+    "groupNumber": 22,
+    "attendanceSchedule": [
+      {
+        "dayOfWeek": "MONDAY",
+        "workedTime": "1:00"
+      },
+      {
+        "dayOfWeek": "WEDNESDAY",
+        "workedTime": "0:57"
+      }
+    ],
+    "debt": "8:00",
+    "fact": null,
+    "tutorComment": null,
+    "headComment": null
+  },
+  {
+    "id": 7,
+    "name": "Ф",
+    "surname": "Сухов",
+    "patronymic": "И",
+    "groupNumber": 20,
+    "attendanceSchedule": [
+      {
+        "dayOfWeek": "MONDAY",
+        "workedTime": "1:53"
+      },
+      {
+        "dayOfWeek": "WEDNESDAY",
+        "workedTime": "1:00"
+      }
+    ],
+    "debt": "1:42",
+    "fact": "Другое",
+    "tutorComment": "Семейные обстоятельства",
+    "headComment": "Стажер отписался о своей проблеме заранее."
+  },
+  {
+    "id": 8,
+    "name": "Н",
+    "surname": "Иванова",
+    "patronymic": "А",
+    "groupNumber": 20,
+    "attendanceSchedule": [
+      {
+        "dayOfWeek": "MONDAY",
+        "workedTime": "1:53"
+      },
+      {
+        "dayOfWeek": "WEDNESDAY",
+        "workedTime": "1:00"
+      }
+    ],
+    "debt": "3:12",
+    "fact": null,
+    "tutorComment": null,
+    "headComment": null
+  }
+]

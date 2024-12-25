@@ -1,0 +1,1 @@
+type WidgetIconType = 'error' | 'warning' | 'confirm' | 'info';

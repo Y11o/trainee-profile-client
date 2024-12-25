@@ -1,0 +1,49 @@
+variables:
+  SERVER_URL: "192.168.25.22"
+  SERVER_WORKDIR: "/home/user/profile-client/"
+  USERNAME: user
+  USER_PASSWORD: 12345678
+
+stages:
+  - build
+  - deploy
+
+build:
+  image: node:20.12.2
+  stage: build
+  script:
+    - npm install --force
+    - npm run build
+  artifacts:
+    paths:
+      - dist
+      - docker-compose.yml
+      - Dockerfile
+
+deploy:
+  image: nexus.nic.etu:8181/nic/ubuntu:latest
+  stage: deploy
+  needs:
+    - build
+  only:
+    - master
+  before_script:
+    - command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )
+    - eval $(ssh-agent -s)
+    - chmod 400 "$SSH_PRIVATE_KEY"
+    - ssh-add "$SSH_PRIVATE_KEY"
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - mkdir -p ~/.ssh && touch ~/.ssh/known_hosts
+    - ssh-keyscan -t rsa $SERVER_URL >> ~/.ssh/known_hosts
+    - ls
+    - scp -r ./dist $USERNAME@$SERVER_URL:$SERVER_WORKDIR
+    - scp ./Dockerfile $USERNAME@$SERVER_URL:$SERVER_WORKDIR
+    - scp ./docker-compose.yml $USERNAME@$SERVER_URL:$SERVER_WORKDIR
+    - scp -r ./docker $USERNAME@$SERVER_URL:$SERVER_WORKDIR
+  script:
+    - ssh $USERNAME@$SERVER_URL "echo $USER_PASSWORD | sudo -S sh -c cd $SERVER_WORKDIR &&
+      pwd &&
+      docker stop profile-client &&
+      docker rm profile-client &&
+      docker compose --project-directory $SERVER_WORKDIR up -d --build"

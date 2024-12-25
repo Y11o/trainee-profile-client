@@ -1,0 +1,64 @@
+@import "colorVars";
+@import "fonts";
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: $lk-gr-background;
+  color: $lk-dark;
+}
+
+.bordered-block {
+  border-radius: 8px;
+  border: 1px solid $lk-gb-40;
+  background: $lk-white;
+}
+
+.page-block-container {
+  padding: 0 12px !important;
+
+  @media (min-width: 1280px) {
+    padding: 0 64px !important;
+  }
+}
+
+.page-color {
+  background-color: $lk-gr-background
+}
+
+.v-data-table__td {
+  border: none !important;
+}
+
+.line {
+  background-color: $lk-blue;
+  height: 3px;
+  border-radius: 4px 4px 0 0;
+}
+
+.text-notification {
+  text-decoration: underline;
+
+  &--read {
+    color: $lk-gb-40;
+  }
+
+  &--unread {
+    color: $lk-blue;
+    cursor: pointer;
+  }
+}
+
+.notification-info {
+  &--read {
+    color: $lk-gb-40;
+  }
+}
+
+.indicator {
+  font-size: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+}

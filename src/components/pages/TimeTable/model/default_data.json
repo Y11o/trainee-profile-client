@@ -1,0 +1,300 @@
+{
+    "regularScheduleByDate": [
+        {
+            "id": 2481,
+            "bookingStatus": {
+                "id": 1,
+                "name": "REGULAR"
+            },
+            "desk": {
+                "cabinet": {
+                    "id": 1,
+                    "name": "16"
+                },
+                "id": 1,
+                "number": "1"
+            },
+            "finishTime": "2024-08-12 11:00",
+            "startTime": "2024-08-12 08:00",
+            "user": {
+                "id": 2481,
+                "name": "Валерия",
+                "patronymic": "Юрьевна",
+                "surname": "Титаровская",
+                "role": {
+                    "id": 2,
+                    "name": "ROLE_TRAINEE"
+                }
+            },
+            "visitStatus": {
+                "id": 1,
+                "name": "UNINSPECTED"
+            }
+        },
+        {
+            "id": 2482,
+            "bookingStatus": {
+                "id": 1,
+                "name": "REGULAR"
+            },
+            "desk": {
+                "cabinet": {
+                    "id": 1,
+                    "name": "16"
+                },
+                "id": 2,
+                "number": "2"
+            },
+            "finishTime": "2024-08-12 11:00",
+            "startTime": "2024-08-12 08:00",
+            "user": {
+                "id": 187,
+                "name": "Валерия",
+                "patronymic": "Юрьевна",
+                "surname": "Титаровская",
+                "role": {
+                    "id": 2,
+                    "name": "ROLE_TRAINEE"
+                }
+            },
+            "visitStatus": {
+                "id": 1,
+                "name": "UNINSPECTED"
+            }
+        }
+    ],
+    "freeScheduleByDate": [
+        {
+            "id": 2988,
+            "bookingStatus": {
+                "id": 4,
+                "name": "FREE"
+            },
+            "desk": {
+                "cabinet": {
+                    "id": 1,
+                    "name": "16"
+                },
+                "id": 3,
+                "number": "3"
+            },
+            "finishTime": "2024-08-12 15:30",
+            "startTime": "2024-08-12 14:30",
+            "user": null,
+            "visitStatus": {
+                "id": 1,
+                "name": "UNINSPECTED"
+            }
+        },
+        {
+            "id": 2989,
+            "bookingStatus": {
+                "id": 4,
+                "name": "FREE"
+            },
+            "desk": {
+                "cabinet": {
+                    "id": 1,
+                    "name": "16"
+                },
+                "id": 4,
+                "number": "4"
+            },
+            "finishTime": "2024-08-12 15:30",
+            "startTime": "2024-08-12 14:30",
+            "user": null,
+            "visitStatus": {
+                "id": 1,
+                "name": "UNINSPECTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "id": 2481,
+            "intervals": [
+                {
+                    "id": 2790,
+                    "bookingStatus": {
+                        "id": 1,
+                        "name": "REGULAR"
+                    },
+                    "desk": {
+                        "id": 1,
+                        "number": "1",
+                        "cabinet": {
+                            "id": 1,
+                            "name": "16"
+                        }
+                    },
+                    "startTime": "2024-08-12 15:30",
+                    "finishTime": "2024-08-12 21:30",
+                    "visitStatus": {
+                        "id": 1,
+                        "name": "UNINSPECTED"
+                    }
+                },
+                {
+                    "id": 2294,
+                    "bookingStatus": {
+                        "id": 1,
+                        "name": "REGULAR"
+                    },
+                    "desk": {
+                        "id": 1,
+                        "number": "1",
+                        "cabinet": {
+                            "id": 1,
+                            "name": "16"
+                        }
+                    },
+                    "startTime": "2024-08-08 15:30",
+                    "finishTime": "2024-08-08 21:30",
+                    "visitStatus": {
+                        "id": 1,
+                        "name": "UNINSPECTED"
+                    }
+                },
+                {
+                    "id": 2978,
+                    "bookingStatus": {
+                        "id": 3,
+                        "name": "OVERTIME"
+                    },
+                    "desk": {
+                        "id": 1,
+                        "number": "1",
+                        "cabinet": {
+                            "id": 1,
+                            "name": "16"
+                        }
+                    },
+                    "startTime": "2024-08-07 08:00",
+                    "finishTime": "2024-08-07 10:30",
+                    "visitStatus": {
+                        "id": 1,
+                        "name": "UNINSPECTED"
+                    }
+                }
+            ],
+            "name": "Камиль",
+            "patronymic": "Равилевич",
+            "regularSchedules": [
+                {
+                    "id": 23,
+                    "dayOfWeek": "THURSDAY",
+                    "desk": {
+                        "id": 1,
+                        "number": "1",
+                        "cabinet": {
+                            "id": 1,
+                            "name": "16"
+                        }
+                    },
+                    "startTime": "15:30",
+                    "finishTime": "21:30",
+                    "weekIsEven": false
+                },
+                {
+                    "id": 10,
+                    "dayOfWeek": "THURSDAY",
+                    "desk": {
+                        "id": 1,
+                        "number": "1",
+                        "cabinet": {
+                            "id": 1,
+                            "name": "16"
+                        }
+                    },
+                    "startTime": "15:30",
+                    "finishTime": "21:30",
+                    "weekIsEven": true
+                }
+            ],
+            "role": {
+                "id": 2,
+                "name": "ROLE_TRAINEE"
+            },
+            "surname": "Абдрахманов"
+        }
+    ],
+    "regularScheduleByDateAndDesk": [
+        {
+            "id": 2503,
+            "bookingStatus": {
+                "id": 1,
+                "name": "REGULAR"
+            },
+            "desk": {
+                "id": 10,
+                "number": "10",
+                "cabinet": {
+                    "id": 1,
+                    "name": "16"
+                }
+            },
+            "startTime": "2024-08-12 08:00",
+            "finishTime": "2024-08-12 14:00",
+            "user": {
+                "id": 80,
+                "name": "Софья",
+                "patronymic": "Вадимовна",
+                "surname": "Кравченко",
+                "role": {
+                    "id": 2,
+                    "name": "ROLE_TRAINEE"
+                }
+            },
+            "visitStatus": {
+                "id": 1,
+                "name": "UNINSPECTED"
+            }
+        }
+    ],
+    "freeScheduleByDateAndDesk": [
+        {
+            "id": 2988,
+            "bookingStatus": {
+                "id": 4,
+                "name": "FREE"
+            },
+            "desk": {
+                "cabinet": {
+                    "id": 1,
+                    "name": "16"
+                },
+                "id": 3,
+                "number": "3"
+            },
+            "finishTime": "2024-08-12 15:30",
+            "startTime": "2024-08-12 14:30",
+            "user": null,
+            "visitStatus": {
+                "id": 1,
+                "name": "UNINSPECTED"
+            }
+        },
+        {
+            "id": 2989,
+            "bookingStatus": {
+                "id": 4,
+                "name": "FREE"
+            },
+            "desk": {
+                "cabinet": {
+                    "id": 1,
+                    "name": "16"
+                },
+                "id": 4,
+                "number": "4"
+            },
+            "finishTime": "2024-08-12 15:30",
+            "startTime": "2024-08-12 14:30",
+            "user": null,
+            "visitStatus": {
+                "id": 1,
+                "name": "UNINSPECTED"
+            }
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "user": {
+        "name": "Алексей",
+        "surname": "Пысёнков",
+        "patronymic": "Сергеевич"
+      },
+      "role": "Начальник ЦРТРИС",
+      "email": "a.pysenkov@nicetu.spb.ru",
+      "phone": "+7 (965) 077-89-87",
+      "phoneLink": "+79650778987",
+      "telegram": {
+        "nik": "@alexheiki_job",
+        "ref": "https://t.me/alexheiki_job"
+      },
+      "img": {
+        "src": "@/assets/img/contacts-page/aps.svg",
+        "alt": "Пысенков"
+      }
+    },
+    {
+      "id": 2,
+      "user": {
+        "name": "Егор",
+        "surname": "Тюляндин",
+        "patronymic": "Андреевич"
+      },
+      "role": "Зам. начальника ЦРТРИС",
+      "email": "e.tulyandin@nicetu.spb.ru",
+      "phone": "+7 (921) 571-21-50",
+      "phoneLink": "+79215712150",
+      "telegram": {
+        "nik": "@working_egor",
+        "ref": "https://t.me/@working_egor"
+      },
+      "img": {
+        "src": "@/assets/img/contacts-page/eta.jpg",
+        "alt": "Тюляндин"
+      }
+    }
+  ]
+}

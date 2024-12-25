@@ -1,0 +1,7 @@
+services:
+  trainee-profile-client:
+    build: .
+    container_name: "profile-client"
+    restart: always
+    ports:
+      - "8083:80"
