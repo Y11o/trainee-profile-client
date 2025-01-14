@@ -12,7 +12,7 @@
     />
     <img
       src="@/assets/img/logo/logo_default.svg"
-      alt="CRTRIS logo"
+      alt="logo"
     >
     <v-spacer class="d-flex d-lg-none"/>
     <v-toolbar-items

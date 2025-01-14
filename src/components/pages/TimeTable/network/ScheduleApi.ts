@@ -3,19 +3,19 @@ import { NoAuthBaseApi } from '@/components/common/network/no_auth_api/BaseApi';
 import type { IEmployeesListItemInterface, IReservationData, IScheduleDisplayInterface, IScheduleInterface, IUserSchedule } from '@/components/pages/TimeTable/interfaces/IScheduleInterface';
 
 export class ScheduleApi extends BaseApi {
-  addReservation = async (data: IReservationData): Promise<IScheduleInterface[]> => 
+  addReservation = async (data: IReservationData): Promise<IScheduleInterface[]> =>
     (await this.axiosInstance.post(`${this.path}/intervals/valid/create`, data)).data;
 
   createUser = async (): Promise<string> =>
-    (await this.axiosInstance.get(`${this.path}/users/valid/create`)).data; 
+    (await this.axiosInstance.get(`${this.path}/users/valid/create`)).data;
 
-  deleteUserInterval = async (data: number) => 
-    (await this.axiosInstance.delete(`${this.path}/intervals/delete/${data}`)).data; 
+  deleteUserInterval = async (data: number) =>
+    (await this.axiosInstance.delete(`${this.path}/intervals/delete/${data}`)).data;
 }
 
-export class NoAuthScheduleApi extends NoAuthBaseApi { 
+export class NoAuthScheduleApi extends NoAuthBaseApi {
   getEmployeeNames = async (): Promise<IEmployeesListItemInterface[]> =>
-    (await this.axiosInstance.get(`${this.path}/users`)).data;
+    (await this.axiosInstance.get(`${this.path}/users/min-data`)).data;
 
   getScheduleByDate = async (data: { date: string }): Promise<IScheduleInterface[]> =>
     (await this.axiosInstance.post(`${this.path}/intervals/by-date`, data)).data;
