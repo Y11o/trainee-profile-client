@@ -14,4 +14,5 @@ interface SignInResponse {
 interface SignInRequest {
   login: string;
   password: string;
+  rememberMe: boolean;
 }

@@ -8,7 +8,6 @@
     <template #header>
       <div class="communication-table w-100 d-flex justify-space-between align-center px-4">
         <span class="communication-table__title">КОНТАКТЫ</span>
-        <contact-management/>
       </div>
     </template>
     <v-container
@@ -20,13 +19,13 @@
     >
       <img
         v-if="index === 0"
-        src="@/assets/img/contacts-page/aps.svg"
+        src="@/assets/img/contacts-page/first_men.jpg"
         :alt="item.img.alt"
         width="128px"
       />
       <img
         v-if="index === 1"
-        src="@/assets/img/contacts-page/eta.png"
+        src="@/assets/img/contacts-page/second_men.jpg"
         :alt="item.img.alt"
         width="128px"
       />
@@ -47,7 +46,6 @@
 
 <script setup lang="ts">
 import CTableContainer from '@/components/common/ui/CTableContainer.vue';
-import ContactManagement from '@/components/pages/ContactsPage/ui/components/ContactManagement.vue';
 import type { ContactModel } from '@/components/pages/ContactsPage/models/ContactModel';
 
 defineProps<{

@@ -11,7 +11,7 @@
       @click="isDrawerOpened = !isDrawerOpened"
     />
     <img
-      src="@/assets/img/logo/Logo.svg"
+      src="@/assets/img/logo/logo_default.svg"
       alt="CRTRIS logo"
     >
     <v-spacer class="d-flex d-lg-none"/>
@@ -35,12 +35,6 @@
       class="d-none d-lg-flex align-center ga-7 font-weight-medium"
     >
       <!-- TODO: убрать userDataStore.role.isCurator после появления роли ассистента -->
-      <router-link
-        v-if="userDataStore.roleIs.isAssistant || userDataStore.roleIs.isCurator"
-        to="/assistant-panel"
-      >
-        ПУ АССИСТЕНТА
-      </router-link>
       <router-link
         v-if="userDataStore.roleIs.isCurator"
         to="/tutor-panel"

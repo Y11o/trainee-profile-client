@@ -6,7 +6,7 @@
     </div>
     <v-divider class="line d-none d-lg-flex" />
     <employee-row
-      v-for="item in data"
+      v-for="item in fixedGroupName"
       :key="item.rowName"
       :title="item.rowName"
       :content="item.content"
@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue';
+import { computed, ref, watch } from 'vue';
 import type { EmployeeDetailsModel } from '@/components/pages/MainPage/models/employee/EmployeeDetailsModel';
 import { CuratorModel } from '@/components/pages/MainPage/models/employee/curator/CuratorModel';
 import type { MentorModel } from '@/components/pages/MainPage/models/employee/mentor/MentorModel';
@@ -98,6 +98,18 @@ const defaultDialogContent = new CuratorModel({
  * Переменная, содержащая контент выводимого окна
  */
 const dialogContent = ref<CuratorModel>(defaultDialogContent);
+
+const fixedGroupName = computed(() => 
+  props.data.map((row, index: number) => {
+    if (index === props.data.length - 1) {
+      return {
+        ...row,
+        content: row.content.match(/^\d+/)?.[0] || row.content
+      };
+    }
+    return row;
+  })
+);
 
 /**
  * Вотчер, присваивающий дефолтные значения заголовку и полям модального окна с инфо о кураторе/наставнике при его закрытии

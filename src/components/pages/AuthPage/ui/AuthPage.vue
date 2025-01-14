@@ -109,6 +109,7 @@ const onSubmitClicked = () => withLoading(
   authApi.authorize({
     login: login.value,
     password: password.value,
+    rememberMe: rememberUser.value
   })
   .then(async (data) => {
     if (rememberUser.value) {

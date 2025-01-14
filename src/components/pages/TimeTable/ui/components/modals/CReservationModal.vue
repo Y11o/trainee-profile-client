@@ -1,7 +1,7 @@
 <template>
   <v-container class="px-0 py-0">
     <span class="d-block w-100 py-2 px-2 justify-start mb-4 reservation-data">
-      Бронирование стола {{ formattedDeskName(desk.name) }}
+      Бронирование стола {{ formattedDeskName(desk.name, desk.id) }}
     </span>
     <c-student-name-select
       :isMultiple="false"
@@ -22,48 +22,6 @@
         :isModalWindow="isModalWindow"
         :interval="interval"
       />
-    </v-container>
-    <v-checkbox
-      v-model="isWorkingOff"
-      color="grey"
-      label="Отработка пропуска"
-      :hide-details="true"
-      :disabled="!useUserDataStore().isAuthorized"
-      class="checkbox"
-    />
-    <v-container
-      v-if="isWorkingOff"
-      fluid
-      class="px-0 py-0"
-    >
-      <v-select
-        v-model="selectedWorkingOff"
-        variant="outlined"
-        density="compact"
-        :clearable="false"
-        :items="workingOffVariants"
-        class="select"
-        :autofocus="true"
-      />
-      <v-select
-        v-if="selectedWorkingOff==='Добавить отработку заранее'"
-        v-model="selectedRegularInterval"
-        variant="outlined"
-        density="compact"
-        label="Интервал"
-        class="select"
-        item-title="formattedInterval"
-        item-value="id"
-        :clearable="false"
-        :items="formattedIntervals"
-        :autofocus="true"
-        @change="handleSelectChange"
-      >
-        <template #no-data>
-          <p style="margin-left: 20px;">Нет данных</p>
-        </template>
-      </v-select>
-      <p v-else>У вас отсутствуют пропуски</p>
     </v-container>
   </v-container>
 </template>
@@ -140,12 +98,22 @@ watch(selectedRegularInterval, (newValue: number) => {
 /**
  * Настройка отображения названия стола
  */
-const formattedDeskName = (deskName: string): string => {
+const formattedDeskName = (deskName: string, deskId: number): string => {
   switch (deskName) {
     case 'АССИСТЕНТ':
-      return `${deskName}A`;
+      if (deskId === '32') {
+        return 'ассистента 1';
+      } else if (deskId === '44') {
+        return 'ассистента 2';
+      }
+      break;
+    case 'Стол ассистента 2':
+      return 'ассистента 2';
+    case 'Стол ассистента 1':
+      return 'ассистента 1';
+    case 'NO NAME':
     case 'NONAME':
-      return 'NO NAME';
+      return `${deskName}`;
     default:
       return `№${deskName}`;
   }

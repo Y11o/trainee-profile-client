@@ -5,7 +5,7 @@
         <h3>Рейтинг стажёра</h3>
       </template>
     </c-modal-header>
-    <p class="ma-2">Ваш текущий рейтинг: {{ rating }}</p>
+    <p class="ma-2">Ваш текущий рейтинг: 24</p>
     <history-row
       v-for="data in debugRating"
       :key="data.id"
@@ -47,7 +47,7 @@ const rating = ref<number | string>('Не указано');
 /**
  * Ссылка на общий рейтинг стажеров
  */
-const commonRatingLink = 'http://crtris-base.nicetu.spb.ru/public/gallery/uaMNFZnbjdqP377qrFO4zG78fAwzKh8HxPHjiEDuZCg';
+const commonRatingLink = '';
 
 onBeforeMount(async () => {
   console.log('Getting rating info'); //todo: сделать запрос на сервер на получение истории изменения рейтинга стажера
@@ -59,14 +59,14 @@ const debugRating = ref<RatingData[]>([
     grade: 2,
     isPlus: true,
     type: 'Практика',
-    name: 'ЛК ЦРТРИС'
+    name: 'ЛК'
   },
   {
     id: 2,
     grade: 1,
     isPlus: false,
     type: 'Просрочка',
-    name: 'ЛК ЦРТРИС'
+    name: 'ЛК'
   }
 ]);
 </script>

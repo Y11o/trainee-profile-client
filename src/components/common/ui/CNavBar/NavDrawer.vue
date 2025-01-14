@@ -16,12 +16,6 @@
         :to="item.route"
       />
       <v-list-item
-        v-if="userDataStore.roleIs.isAssistant || userDataStore.roleIs.isCurator"
-        class="mt-auto"
-        title="ПУ АССИСТЕНТА"
-        :to="isDesktop ? '/assistant-panel/certificates' : '/assistant-panel'"
-      />
-      <v-list-item
         v-if="userDataStore.roleIs.isCurator"
         title="ПУ КУРАТОРА"
         :to="isDesktop ? '/tutor-panel/view-groups' : '/tutor-panel'"

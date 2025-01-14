@@ -3,41 +3,41 @@
     {
       "id": 1,
       "user": {
-        "name": "Алексей",
-        "surname": "Пысёнков",
-        "patronymic": "Сергеевич"
+        "name": "Иван",
+        "surname": "Иванов",
+        "patronymic": "Иванович"
       },
-      "role": "Начальник ЦРТРИС",
-      "email": "a.pysenkov@nicetu.spb.ru",
-      "phone": "+7 (965) 077-89-87",
-      "phoneLink": "+79650778987",
+      "role": "Начальник",
+      "email": "i.ivanov@yandex.ru",
+      "phone": "+7 (999) 999-99-99",
+      "phoneLink": "+79999999999",
       "telegram": {
-        "nik": "@alexheiki_job",
-        "ref": "https://t.me/alexheiki_job"
+        "nik": "@iivanov",
+        "ref": "https://t.me/iivanov"
       },
       "img": {
-        "src": "@/assets/img/contacts-page/aps.svg",
-        "alt": "Пысенков"
+        "src": "@/assets/img/contacts-page/first_men.jpg",
+        "alt": "Иванов"
       }
     },
     {
       "id": 2,
       "user": {
-        "name": "Егор",
-        "surname": "Тюляндин",
-        "patronymic": "Андреевич"
+        "name": "Пётр",
+        "surname": "Петров",
+        "patronymic": "Петрович"
       },
-      "role": "Зам. начальника ЦРТРИС",
-      "email": "e.tulyandin@nicetu.spb.ru",
-      "phone": "+7 (921) 571-21-50",
-      "phoneLink": "+79215712150",
+      "role": "Зам. начальника",
+      "email": "p.petrov@yandex.ru",
+      "phone": "+7 (988) 888-88-88",
+      "phoneLink": "+79888888888",
       "telegram": {
-        "nik": "@working_egor",
-        "ref": "https://t.me/@working_egor"
+        "nik": "@ppetrov",
+        "ref": "https://t.me/@ppetrov"
       },
       "img": {
-        "src": "@/assets/img/contacts-page/eta.jpg",
-        "alt": "Тюляндин"
+        "src": "@/assets/img/contacts-page/second_men.jpg",
+        "alt": "Петров"
       }
     }
   ]

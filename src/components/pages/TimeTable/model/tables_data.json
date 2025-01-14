@@ -27,12 +27,11 @@
     { "x": 7, "y": 7, "w": 2, "h": 1, "i": "22", "id": "22", "static": false },
     { "x": 9, "y": 8, "w": 2, "h": 1, "i": "23", "id": "23", "static": false },
     { "x": 7, "y": 8, "w": 2, "h": 1, "i": "24", "id": "24", "static": false },
-    { "x": 1, "y": 6, "w": 1, "h": 2, "i": "25", "id": "25", "static": false, "verticalText": true },
+    { "x": 1, "y": 8, "w": 1, "h": 2, "i": "25", "id": "25", "static": false, "verticalText": true },
     { "x": 0, "y": 6, "w": 1, "h": 2, "i": "26", "id": "26", "static": false , "verticalText": true},
     { "x": 0, "y": 10, "w": 1, "h": 2, "i": "27", "id": "27", "static": false, "verticalText": true },
     { "x": 0, "y": 8, "w": 1, "h": 2, "i": "28", "id": "28", "static": false, "verticalText": true },
     { "x": 1, "y": 10, "w": 1, "h": 2, "i": "29", "id": "29", "static": false, "verticalText": true },
-    { "x": 1, "y": 8, "w": 1, "h": 2, "i": "NONAME", "id": "31", "static": false, "verticalText": true },
     { "x": 0, "y": 0, "w": 6, "h": 6, "i": "КАБ. НАЧ-КА ЦЕНТРА", "id": "46", "static": false, "disabled": true }
   ],
   "layout_37": [
@@ -93,7 +92,6 @@
     "38",
     "39",
     "40",
-    "41",
-    "NO NAME"
+    "41"
   ] 
 }

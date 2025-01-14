@@ -65,7 +65,7 @@ import { onBeforeMount, onUnmounted, ref, watch } from 'vue';
 import type { EmployeeModel } from '@/components/pages/MainPage/models/employee/EmployeeModel';
 import CBasicInfo from '@/components/pages/MainPage/ui/components/EmployeeInfo/CBasicInfo.vue';
 import PhotoInputModal from '@/components/pages/MainPage/ui/components/EmployeeInfo/modal/PhotoInputModal.vue';
-import DefaultImageUrl from '@/assets/img/main-page/avatar_default.jpg';
+import DefaultImageUrl from '@/assets/img/main-page/avatar.jpg';
 
 /**
  * @param {EmployeeModel} employeeData Массив с данными о стажере: фото, детали стажера, данные его куратора и наставника

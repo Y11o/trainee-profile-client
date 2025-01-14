@@ -5,13 +5,11 @@
       :key="item.id"
       :contact="item"
     />
-    <contact-management/>
   </div>
 </template>
 
 <script setup lang="ts">
 import ContactProfileCard from '@/components/pages/ContactsPage/ui/components/ContactProfileCard.vue';
-import ContactManagement from '@/components/pages/ContactsPage/ui/components/ContactManagement.vue';
 import type { ContactModel } from '@/components/pages/ContactsPage/models/ContactModel';
 
 defineProps<{

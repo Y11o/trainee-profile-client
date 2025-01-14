@@ -11,13 +11,13 @@
       <img
         v-if="contact.id === 1"
         class="profile__photo"
-        src="@/assets/img/contacts-page/aps.svg"
+        src="@/assets/img/contacts-page/first_men.jpg"
         :alt="contact.img.alt"
       >
       <img
         v-else
         class="profile__photo"
-        src="@/assets/img/contacts-page/eta.png"
+        src="@/assets/img/contacts-page/second_men.jpg"
         :alt="contact.img.alt"
       >
     </v-avatar>

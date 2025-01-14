@@ -5,7 +5,7 @@
     transition="fade-transition"
   >
     <div class="modal__header px-2 d-flex align-center">
-      <div class="text-subtitle-2 font-weight-medium">СТОЛ {{ formattedDeskName(desk.name) }}</div>
+      <div class="text-subtitle-2 font-weight-medium">СТОЛ {{ formattedDeskName(desk.name, desk.id) }}</div>
     </div>
     <span
       v-if="currentWeekDay === 'суббота' || currentWeekDay === 'воскресенье'"
@@ -169,12 +169,18 @@ const openReservationModal = (intervalId: number, bookingStatus: string): void =
 /**
  * Настройка отображения названия стола
  */
-const formattedDeskName = (deskName: string): string => {
+const formattedDeskName = (deskName: string, deskId: number): string => {
   switch (deskName) {
     case 'АССИСТЕНТ':
-      return `${deskName}A`;
+      if (deskId === '32') {
+        return 'АССИСТЕНТА 1';
+      } else if (deskId === '44') {
+        return 'АССИСТЕНТА 2';
+      }
+      break;
+    case 'NO NAME':
     case 'NONAME':
-      return 'NO NAME';
+      return `${deskName}`;
     default:
       return `№${deskName}`;
   }
